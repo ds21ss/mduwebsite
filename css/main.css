@@ -1435,6 +1435,14 @@ video {
   .sm\:h-24 {
     height: 6rem;
   }
+
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1448,6 +1456,14 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
+  }
+
+  .md\:h-20 {
+    height: 5rem;
   }
 
   .md\:w-4\/12 {
@@ -1575,6 +1591,14 @@ video {
 
   .lg\:h-32 {
     height: 8rem;
+  }
+
+  .lg\:h-24 {
+    height: 6rem;
+  }
+
+  .lg\:h-28 {
+    height: 7rem;
   }
 
   .lg\:w-6\/12 {
