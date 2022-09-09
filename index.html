@@ -24,59 +24,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- For common footer etc -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    
+    <script> 
+      $(function(){
+        $("#footer").load("footer.html"); 
+        $("#navbar").load("navbar.html"); 
+      });
+    </script> 
     <!-- CSS build output -->
     <link rel="stylesheet" href="css/main.css">
     <title>Medical Devices Unit</title>
   </head>
   <body class="text-gray-800 antialiased">
     <!-- Nav Bar -->
-    <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
-    >
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-      >
-        <div
-          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-        >
-        <div class="pt-6 pr-90">
-          <img src="./assets/img/MDU logo_white.png" style="width:15%"/>
-        </div>
-          <button
-            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-            type="button"
-            onclick="toggleNavbar('example-collapse-navbar')"
-          >
-            <i class="text-white fas fa-bars"></i>
-          </button>
-        </div>
-        <div
-          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
-          id="example-collapse-navbar"
-        >
-          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                ><a href="./about"><i
-                  class="lg:text-gray-300 text-gray-500 fas fa-address-card text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">About Us</span></a
-              >
-            </li>
-            <!-- Nav Bar LinkedIn Icon -->
-            <li class="flex items-center">
-              <a
-                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                ><a href="https://uk.linkedin.com/company/medical-devices-unit-nhs-greater-glasgow-&-clyde"><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "
-                ></i
-                ><span class="lg:hidden inline-block ml-2">Profile</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <nav id="navbar"></nav>
     <!-- Main Area -->
     <main>
       <!-- Hero -->
@@ -340,7 +306,7 @@
             </div>
             <!-- Card 3 -->
             <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4" data-aos="flip-right">
-              <a href="./p072">
+              <a href="./person1.html">
               <div class="px-6 cursor-pointer w-full h-full">
                 <img
                   alt="..."
@@ -458,116 +424,9 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-      <div
-        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style="height: 80px;" 
-      >
-        <svg
-          class="absolute bottom-0 overflow-hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          version="1.1"
-          viewBox="0 0 2560 100"
-          x="0"
-          y="0"
-        >
-          <polygon
-            class="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
-          ></polygon>
-        </svg>
-      </div>
-      <div class="container mx-auto px-4" data-aos="fade-up">
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4">
-            <h4 class="text-3xl font-semibold">Follow us on LinkedIn</h4>
-            <div class="mt-6">
-            <button
-                class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-              <a href="https://uk.linkedin.com/company/medical-devices-unit-nhs-greater-glasgow-&-clyde"><i class="flex fab fa-linkedin"></i></a></button
-              >
-              </button>
-            </div>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-4 ml-auto">
-                <span
-                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-                  >Useful Links</span
-                >
-                <ul class="list-unstyled">
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="aboutus.html"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.nhsggc.scot/"
-                      >NHS Greater Glasgow and Clyde</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="http://www.gcor.org.uk/"
-                      >Glasgow Centre for Ophthalmic Research</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="w-full lg:w-4/12 px-4">
-                <span
-                  class="block uppercase text-gray-300 text-sm font-semibold mb-2"
-                  >.</span
-                >
-                <ul class="list-unstyled">
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="/terms"
-                      >Terms &amp; Conditions</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="/privacy"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="/contact-us"
-                      >Contact Us</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-6 border-gray-400" />
-        <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
-        >
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-600 font-semibold py-1">
-              Copyright © 2022 <a href="./index.html">Medical Devices Unit</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- Footer common -->
+    <footer id="footer"></footer>
+
   </body>
   <script>
     function toggleNavbar(collapseID) {
