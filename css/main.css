@@ -1478,6 +1478,10 @@ video {
   .sm\:h-16 {
     height: 4rem;
   }
+
+  .sm\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
