@@ -3,7 +3,12 @@ module.exports = {
   content: ['./*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '200': '50rem',
+        '128': '32rem',
+      }
+    },
   },
   plugins: [
   ],
